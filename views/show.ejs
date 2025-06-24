@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post Details</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">📄 Post Details</h1>
+
+    <div class="post-card">
+      <p><strong>Post ID:</strong> <%= post.id %></p>
+      <h3 class="username">@<%= post.username %></h3>
+      <p class="content"><%= post.content %></p>
+
+      <div class="actions">
+        <a href="/posts/<%= post.id %>/edit" class="btn edit">Edit</a>
+        <a href="/posts" class="btn view">Back to Posts</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #2d2d2d;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  border-bottom: 2px solid #d0d7de;
+  padding-bottom: 15px;
+}
+
+/* Post layout */
+.post-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Post card */
+.post-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 18px 22px;
+  transition: all 0.25s ease-in-out;
+}
+
+.post-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+/* Text inside posts */
+.username {
+  margin: 0;
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.content {
+  margin: 12px 0 16px;
+  font-size: 1.05rem;
+  color: #4b4b4b;
+  line-height: 1.6;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inline-form {
+  display: inline;
+}
+
+/* Buttons */
+.btn {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn.view {
+  background-color: #007bff;
+}
+.btn.view:hover {
+  background-color: #0069d9;
+}
+
+.btn.edit {
+  background-color: #ffc107;
+  color: #222;
+}
+.btn.edit:hover {
+  background-color: #e0a800;
+}
+
+.btn.delete {
+  background-color: #dc3545;
+}
+.btn.delete:hover {
+  background-color: #c82333;
+}
+
+.btn.create {
+  background-color: #28a745;
+  display: inline-block;
+  margin-top: 30px;
+}
+.btn.create:hover {
+  background-color: #218838;
+}
+
+.create-btn-wrapper {
+  text-align: center;
+}
+
+/* Inputs */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* Form wrapper */
+.form-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  margin-top: 30px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+}
