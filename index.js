@@ -19,6 +19,10 @@ let posts = [
     { id: uuidv4(), username: "CuriousMind", content: "Can AI ever fully replicate human intuition? Thoughts?" },
     { id: uuidv4(), username: "CampusChronicles", content: "College isn't just for degrees, it's for discovery." }
 ];
+app.get("/", (req, res) => {
+    res.redirect("/posts");
+});
+
 
 
 
