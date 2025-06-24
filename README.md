@@ -4,6 +4,7 @@ A Quora-style post-sharing web application built with **Node.js**, **Express.js*
 It allows users to create, view, edit, and delete posts dynamically using RESTful routes and a clean UI.
 
 ---
+# LINK- https://query-nest-q5ut.vercel.app/posts
 
 ## 🚀 Features
 
